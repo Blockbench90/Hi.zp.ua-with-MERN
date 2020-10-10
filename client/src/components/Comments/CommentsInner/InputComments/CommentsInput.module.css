@@ -1,0 +1,91 @@
+.Wrapper{
+    padding: 43px;
+}
+.InputWrapper input {
+    color: white;
+    padding-left: 10px;
+    /*Сброс стандартных стилей*/
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+.InputWrapper input::placeholder {
+    color: darkgray;
+}
+.InputInner{
+    margin-bottom: 13px;
+    font-size: 18px;
+}
+.InputInner span{
+    font-size: 9px;
+    font-weight: 700;
+}
+.TextareaInner{
+    margin-bottom: 10px;
+}
+.wrapperButton{
+    padding-left: 41%;
+}
+.wrapperButton button{
+    display: inline-block;
+    border: 1px solid red;
+    padding: 6px 22px;
+    background: rgba(255, 255, 255, 0.15);
+    transition: all .5s;
+}
+.wrapperButton button:hover{
+    background-color: aqua;
+}
+.Sex{
+    color: white;
+}
+@media (max-width: 1199px) {
+    .wrapperButton{
+        padding-left: 45%;
+    }
+    .Sex{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 675px) {
+    /*.TextareaWrapper{*/
+    /*    height: 13vh;*/
+    /*}*/
+    .wrapperButton{
+        padding-left: 48%;
+    }
+    .Wrapper{
+        padding: 0;
+    }
+    .Input textarea{
+        height: 10vh;
+        width: 83vw;
+    }
+}
+
+@media (max-width: 416px) {
+    .InputInner{
+        font-size: 12px;
+    }
+    .Wrapper{
+        width: 90%;
+        overflow: hidden;
+    }
+    .InputInner{
+        margin-bottom: 5px;
+    }
+    .Sex{
+        font-size: 14px;
+    }
+    .InputInner input{
+
+    }
+    .InputInner span{
+        font-size: 4px;
+    }
+    .Input textarea{
+        height: 10vh;
+        width: 83vw;
+    }
+}

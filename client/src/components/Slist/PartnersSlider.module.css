@@ -1,0 +1,39 @@
+.Wrapper{
+    background-color: black;
+    overflow-x: hidden;
+}
+.first,
+.two,
+.three,
+.For,
+.Five,
+.Six,
+.Seven{
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    left: 0;
+    right: 0;
+}
+
+.first {
+    background-image: url("../../assets/img/slick/slick_1.jpg");
+}
+.two {
+    background-image: url("../../assets/img/slick/slick_2.jpg");;
+}
+.three {
+    background-image: url("../../assets/img/slick/slick_3.jpg");
+}
+.For{
+    background-image: url("../../assets/img/slick/slick_4.jpg");
+}
+.Five{
+    background-image: url("../../assets/img/slick/slick_6.jpg");
+}
+.Six{
+    background-image: url("../../assets/img/slick/slick_10.jpg");
+}
+.Seven{
+    background-image: url("../../assets/img/slick/slick_9.jpg");
+}

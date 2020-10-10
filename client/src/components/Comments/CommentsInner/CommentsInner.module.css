@@ -1,0 +1,44 @@
+.Wrapper{
+    height: 100vh;
+    /*background-color: darkcyan;*/
+}
+.Container{
+    display: flex;
+    justify-content: space-between;
+}
+.CommentsText{
+    padding-top: 100px;
+    padding-right: 30px;
+    width: 70%;
+}
+.CommentsInput{
+    padding: 50px 50px 0 50px;
+    overflow: hidden;
+    width: 30% ;
+}
+
+@media (max-width: 833px) {
+    .Container{
+        padding-top: 30px;
+        display: inline-block;
+    }
+    .CommentsInput{
+        width: 95% ;
+    }
+    .CommentsText{
+        padding-top: 15px;
+        padding-right: 0;
+        width: 95%;
+    }
+}
+
+@media (max-width: 675px) {
+    .CommentsInput{
+        padding: 20px 0 0 10px;
+    }
+    .CommentsText{
+        padding-top: 15px;
+        padding-right: 0;
+        width: 90%;
+    }
+}

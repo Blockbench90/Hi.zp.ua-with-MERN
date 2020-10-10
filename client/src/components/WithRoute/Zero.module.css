@@ -1,0 +1,65 @@
+.Wrapper{
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    color: white;
+    padding: 50px;
+    overflow: hidden;
+}
+.Container{
+    max-width: 90vw;
+    margin: 0 auto;
+}
+.Content p{
+    margin-left: 20px;
+}
+.Content a{
+    margin: 0 5px;
+    color: yellow;
+}
+.Gallery{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.Gallery img{
+    margin: 10px;
+    border-radius: 15px;
+}
+.Button{
+    padding-left: 90%;
+}
+
+@media (max-width: 1330px) {
+    .Content{
+        font-size: 15px;
+    }
+    .Content div{
+        margin: 20px 0;
+    }
+    .Button{
+        padding-left: 80%;
+    }
+}
+
+@media (max-width: 767px) {
+    .Wrapper{
+        padding: 50px 0 0 0;
+    }
+    .Content{
+        font-size: 11px;
+        line-height: 15px;
+    }
+    .Content div{
+        margin: 0;
+    }
+    .Content {
+        font-size: 15px;
+    }
+    .Gallery img{
+        width: 72px;
+    }
+    .Button{
+        padding: 10px 0 0 40%;
+    }
+}

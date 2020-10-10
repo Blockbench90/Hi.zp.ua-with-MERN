@@ -1,0 +1,30 @@
+.App-Wrapper {
+}
+
+.Container {
+    color: #282c34;
+}
+
+.Container a {
+    cursor: pointer;
+}
+
+.Header-Content {
+}
+
+.HeaderButton {
+    display: none;
+}
+
+@media (max-width: 767px) {
+    .NormalHeader {
+        display: none;
+    }
+    .HeaderButton {
+        display: block;
+        transition: all .5s;
+        /*transition: all 0.3s ease-in-out;*/
+    }
+}
+
+

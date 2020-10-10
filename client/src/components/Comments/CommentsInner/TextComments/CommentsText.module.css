@@ -1,0 +1,114 @@
+.Wrapper {
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 15px; /* ширина для вертикального скролла */
+    height: 5px; /* высота для горизонтального скролла */
+    background: black;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.1);
+    transition: all .5s;
+    border-radius: 9px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: aqua;
+}
+
+.Container {
+    max-height: 650px;
+    display: inline-block;
+    padding: 50px;
+    overflow: auto;
+    /*background-color: darkcyan;*/
+    color: white;
+}
+
+.PostWrapper {
+    margin: 15px;
+}
+
+.PostContainer {
+    display: flex;
+    max-width: 60vw;
+    /*background: rgba(0, 0, 0, 0.1);*/
+    background: rgba(0, 0, 0, 0.3); /*черный полупрозрачный*/
+    border-radius: 40px;
+    padding: 15px;
+}
+.UserDescription{
+    max-width: 70%;
+    padding: 30px;
+    font-size: 19px;
+    text-align: center;
+}
+.UserPhoto span {
+    padding-left: 24%;
+    font-size: 16px;
+}
+
+.PostContainer img {
+    width: 150px;
+}
+
+@media (max-width: 1270px) {
+    .PostContainer img {
+        width: 75px;
+    }
+    .UserDescription{
+        padding: 10px;
+        font-size: 19px;
+    }
+}
+
+@media (max-width: 833px) {
+    .Container {
+        max-height: 319px;
+    }
+}
+
+@media (max-width: 678px) {
+    .Wrapper {
+        box-sizing: border-box;
+        overflow-x: hidden;
+        height: 350px;
+    }
+    .Container {
+        max-height: 419px;
+        padding: 6px;
+    }
+    .UserDescription p{
+        font-size: 11px;
+    }
+    .PostContainer {
+        padding: 15px;
+    }
+    .PostContainer img {
+        width: 30px;
+    }
+}
+
+@media (max-height: 770px){
+    .Wrapper {
+        height: 280px;
+    }
+}
+
+@media (max-height: 1050px) {
+    .Container {
+        padding: 0;
+    }
+    .Container {
+        max-height: 800px;
+    }
+}
+
+@media (max-height: 770px){
+    .Wrapper {
+        height: 280px;
+    }
+}

@@ -1,0 +1,238 @@
+.Wrapper {
+    height: 100vh;
+    color: white;
+    padding: 50px;
+    overflow: hidden;
+}
+.Container {
+    max-width: 80vw;
+    margin: 0 auto;
+}
+.Title {
+    line-height: 0px;
+    padding-left: 12%;
+    font-size: 25px;
+}
+.Gallery {
+    display: flex;
+    justify-content: space-between;
+}
+.Gallery div {
+    width: 225px;
+    padding: 18px;
+    background-color: cadetblue;
+    transition: all .5s;
+    cursor: pointer;
+}
+.Gallery div:hover{
+    background: rgba(255, 255, 255, 0.6);
+}
+.Gallery img {
+    width: 190px;
+    padding-left: 17px;
+}
+
+.Gallery span{
+    font-family: 'Roboto', sans-serif;
+    font-size: 23px;
+    padding-left: 15px;
+}
+.Gallery b{
+    margin-left: 10px;
+}
+.TitleAnt{
+    line-height: 0px;
+    font-size: 30px;
+    padding-left: 39%;
+}
+.ImgAnt{
+    display: flex;
+    justify-content: space-between;
+    background-color: cadetblue;
+    border-radius: 10px;
+}
+.ImgAnt img{
+    width: 160px;
+    cursor: pointer;
+}
+.ImgAnt:hover{
+    background: rgba(255, 255, 255, 0.6);
+}
+.ImgAnt img:hover{
+    transition: all .3s;
+    margin-top: -20px;
+    width: 180px;
+}
+
+.ImgPrograms{
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin-left: 19%;
+    cursor: pointer;
+    background-color: cadetblue;
+    border-radius: 10px;
+}
+.ImgPrograms:hover{
+    background: rgba(255, 255, 255, 0.6);
+}
+.ImgPrograms img{
+    width: 60px;
+}
+.ImgPrograms img:hover{
+    transition: all .2s;
+    margin-top: -20px;
+    width: 90px;
+}
+.BackButton{
+    padding-top: 30px;
+    padding-left: 90%;
+}
+
+@media (max-width: 1700px) {
+    .ImgAnt img {
+        width: 130px;
+    }
+    .ImgPrograms{
+        max-width: 900px;
+        margin-left: 19%;
+    }
+    .BackButton {
+        padding-top: 20px;
+    }
+}
+
+@media (max-width: 1460px) {
+    .Title h3, h4{
+        font-size: 20px;
+    }
+    .Gallery img {
+        width: 100px;
+        padding-left: 55px;
+    }
+    .Gallery span{
+        font-size: 20px;
+    }
+    .ImgAnt img{
+        width: 80px;
+    }
+    .ImgPrograms{
+        max-width: 800px;
+        margin-left: 15%;
+    }
+    .ImgPrograms img{
+        width: 50px;
+    }
+    .BackButton{
+        padding-top: 20px;
+        padding-left: 85%;
+    }
+}
+
+@media (max-width: 1110px) {
+    .Title h3, h4{
+        font-size: 15px;
+    }
+    .Gallery img {
+        padding-left: 30px;
+    }
+    .Gallery span{
+        font-size: 12px;
+    }
+    .ImgPrograms{
+        max-width: 600px;
+        margin-left: 15%;
+    }
+    .ImgPrograms img{
+        width: 40px;
+    }
+    .BackButton{
+        padding-left: 80%;
+    }
+}
+
+@media (max-width: 1050px) {
+    .Gallery div {
+        width: 101px;
+    }
+    .Title h3, h4{
+        font-size: 10px;
+    }
+    .Gallery img {
+        padding-left: 20px;
+    }
+    .Gallery span{
+        font-size: 8px;
+    }
+    .ImgPrograms{
+        max-width: 600px;
+        margin-left: 15%;
+    }
+    .ImgPrograms img{
+        width: 40px;
+    }
+}
+
+@media (max-width: 767px) {
+    .Wrapper {
+       padding: 50px 0 0 0;
+    }
+    .Container {
+        max-width: 90vw;
+        margin: 0 auto;
+    }
+    .Title h3, h4{
+        text-align: center;
+        font-size: 20px;
+        line-height: 19px;
+    }
+    .Gallery{
+        width: 341px;
+    }
+    .Gallery div {
+        width: 50px;
+        padding: 8px;
+    }
+    .Gallery img {
+        width: 50px;
+        padding-left: 4px;
+    }
+    .TitleAnt{
+        line-height: 0;
+        font-size: 30px;
+        padding-left: 17%;
+    }
+    .ImgAnt{
+        height: 50px;
+        width: 341px;
+    }
+    .ImgAnt img{
+        width: 40px;
+    }
+    .Beer img{
+        padding-top: 0;
+        width: 30px;
+    }
+    .Kasper img{
+        padding-top: 0;
+        width: 30px;
+    }
+    .TitleAnt{
+        padding-left: 8%;
+    }
+    .Title {
+        padding-left: 0;
+    }
+    .ImgPrograms{
+        height: 40px;
+        max-width: 341px;
+        margin-left: 2%;
+    }
+    .ImgPrograms img{
+        width: 15px;
+    }
+    .BackButton{
+        padding-left: 30%;
+    }
+}

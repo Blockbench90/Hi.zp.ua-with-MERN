@@ -1,0 +1,109 @@
+.Modal {
+    position: absolute;
+    width: 600px;
+    height: 350px;
+    top: 70px;
+    left: 33%;
+    background-color: rgba(91, 147, 124, 1);
+    color: white;
+    border-radius: 14px;
+}
+.Overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /*background-color: rgba(197, 232, 241, 0.2);*/
+    z-index: 11;
+}
+.InnerModal {
+    display: flex;
+    justify-content: space-between;
+    padding: 3%;
+}
+.Top h3{
+    text-align: center;
+    /*padding-left: 35px;*/
+    line-height: 0px;
+}
+.Top span{
+    font-size: 28px;
+    padding-left: 43px;
+    font-weight: 700;
+}
+.Top img{
+    cursor: pointer;
+    width: 37px;
+    padding-left: 95%;
+}
+.ImgInner img{
+    width: 29px;
+}
+
+.Bottom{
+
+}
+.Bottom p{
+    font-style: italic;
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 22px;
+    padding-left: 67px;
+    text-shadow: 2px 2px 3px black, 0 0 1em white;
+}
+.Bottom span{
+    text-shadow: 2px 2px 3px black, 0 0 1em white;
+    font-size: 23px;
+    line-height: 22px;
+    padding-left: 67px;
+}
+.Bottom button {
+    display: inline-block;
+    border: 1px solid red;
+    padding: 6px 22px;
+    background: rgba(255, 255, 255, 0.15);
+    transition: all .5s;
+    margin: 10px 0 0 350px;
+}
+.Bottom button:hover{
+    background-color: aqua;
+    cursor: pointer;
+}
+@media (max-width: 960px) {
+    .Modal {
+        width: 300px;
+        height: 300px;
+        top: 70px;
+        left: 10%;
+    }
+    .Top h3{
+     font-size: 14px;
+    }
+    .Top span{
+        font-size: 14px;
+        padding-left: 25px;
+    }
+    .Top img{
+        cursor: pointer;
+        width: 37px;
+        padding-left: 120px;
+    }
+    .ImgInner img{
+        display: none;
+    }
+    .Bottom p{
+        font-size: 15px;
+        line-height: 22px;
+        padding-left: 17px;
+    }
+    .Bottom span{
+        font-size: 14px;
+        line-height: 22px;
+        padding-left: 17px;
+    }
+    .Bottom button {
+        padding: 6px 22px;
+        margin: 10px 0 0 50px;
+    }
+}

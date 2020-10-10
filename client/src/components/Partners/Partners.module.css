@@ -1,0 +1,95 @@
+.Wrapper{
+    height: 100vh;
+    left: 0;
+    right: 0;
+    position: absolute;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.Container{
+    max-width: 1200px;
+    margin: 0 auto;
+    color: white;
+}
+.ContentInner{
+    margin-top: 150px;
+}
+.TopContent{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 130px 0;
+}
+.BottomContent{
+    display: flex;
+    justify-content: space-between;
+}
+.TopLeftBlock,
+.TopRightBlock,
+.BotLeftBlock,
+.BotRightBlock {
+    width: 400px;
+    height: 250px;
+    border-left: 1px solid white;
+}
+.TopLeftBlock{
+    padding: 0;
+}
+.TopRightBlock{
+    padding-right: 200px;
+}
+.BotLeftBlock{
+    margin-left: 200px;
+}
+.BotRightBlock{
+    padding: 0;
+}
+.ContentBlock{
+    margin: 50px;
+}
+
+@media (max-width: 1199px) {
+    .Container{
+        max-width: 979px;
+        margin: 0 auto;
+        color: white;
+    }
+    .ContentBlock h3, p{
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 865px) {
+    .TopContent{
+        display: flex;
+        justify-content: space-between;
+        margin: 0 0 20px 0;
+    }
+    .ContentBlock h3, p{
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 675px) {
+    .TopContent{
+        display: none;
+    }
+    .BottomContent{
+        display: inline-block;
+    }
+    .BotLeftBlock,
+    .BotRightBlock {
+        width: 200px;
+        height: 180px;
+        margin: 30px 0px 80px 57px;
+    }
+    .ContentBlock{
+        margin: 10px;
+    }
+}
+
+@media (max-height: 675px) {
+    .ContentInner{
+        margin-top: 20px;
+    }
+}
+

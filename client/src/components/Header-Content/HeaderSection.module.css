@@ -1,0 +1,114 @@
+.Wrapper {
+    color: white;
+    width: 100vw;
+}
+.Container {
+    margin-top: 8vh;
+}
+.HeaderTitle {
+    display: flex;
+    padding-left: 3vw;
+}
+.Title {
+    font-size: 34px;
+    margin: 81px 0 0px 21px;
+}
+.HeaderTitle img {
+    cursor: pointer;
+    width: 120px;
+}
+.Content h1 {
+    line-height: 0px;
+    font-size: 42px;
+}
+.Content p {
+    line-height: 0px;
+    text-align: center;
+    font-size: 46px;
+    font-weight: 700;
+}
+.Content span {
+    font-size: 23px;
+    font-weight: 500;
+}
+.Info {
+    width: 448px;
+    padding-left: 3vw;
+}
+.Info  li, ul {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+    text-decoration: none;
+}
+.Info li{
+    padding-left: 75px;
+}
+.Info p, h1 {
+    text-shadow: 5px 4px 2px black, 0 0 2em cornflowerblue;
+}
+.Visit{
+    font-family: 'Neucha', cursive;
+    text-shadow: 3px 3px 2px black, 0 0 2em cornflowerblue;
+    font-size: 25px;
+}
+.PhotoInfo {
+    margin: 2vw 0 0 3vw;
+    display: flex;
+    justify-content: space-between;
+    max-width: 500px;
+}
+.PhotoInfo img {
+    border-radius: 10px;
+    width: 215px;
+    height: 320px;
+}
+.Btn {
+    padding: 10px 42px;
+}
+
+.BtnUra {
+    padding: 10px 60px;
+}
+
+@media (max-width: 780px) {
+    .Visit{
+        font-size: 13px;
+    }
+    .HeaderTitle img {
+        width: 120px;
+    }
+    .Container {
+        font-size: 18px;
+    }
+    .Content {
+        width: 350px;
+    }
+}
+
+@media (max-width: 414px) {
+    .HeaderTitle img {
+        padding-top: 50px;
+        width: 50px;
+    }
+    .Container {
+        font-size: 13px;
+    }
+    .Content {
+        width: 240px;
+    }
+    .Content h1{
+        font-size: 25px;
+    }
+    .Content p{
+        font-size: 25px;
+    }
+    .Content span {
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .Info {
+        width: 285px;
+        padding-left: 8vw;
+    }
+}

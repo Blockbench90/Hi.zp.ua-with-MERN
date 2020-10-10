@@ -1,0 +1,144 @@
+.Wrapper{
+    height: 100vh;
+    background-image: url("../../assets/img/MapContent/map.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+}
+.Container{
+    padding: 50px;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 40px;
+}
+.Container span{
+    font-size: 34px;
+    font-weight: 700;
+    color: white;
+}
+.PhoneBox{
+    display: flex;
+    font-size: 19px;
+}
+.PhoneBox img{
+    width: 47px;
+}
+.PhoneBox a{
+    margin-top: 10px;
+}
+.MapBox{
+    display: flex;
+}
+.MapBox{
+    text-decoration: underline;
+}
+.MapBox img{
+    width: 47px;
+}
+.Society{
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0px;
+}
+.Society img{
+    width: 40px;
+    height: 40px;
+}
+.Society img:hover {
+    cursor: pointer;
+    --stroke-pos: 1px;
+    --stroke-neg: -1px;
+    --stroke-color: aqua;
+    filter: drop-shadow(var(--stroke-pos) 0 0 var(--stroke-color))
+    drop-shadow(var(--stroke-neg) 0 var(--stroke-color))
+    drop-shadow(0 var(--stroke-pos) 0 var(--stroke-color))
+    drop-shadow(0 var(--stroke-neg) 0 var(--stroke-color))
+    drop-shadow(var(--stroke-pos) var(--stroke-pos) 0 var(--stroke-color))
+    drop-shadow(var(--stroke-pos) var(--stroke-neg) 0 var(--stroke-color))
+    drop-shadow(var(--stroke-neg) var(--stroke-pos) 0 var(--stroke-color))
+    drop-shadow(var(--stroke-neg) var(--stroke-neg) 0 var(--stroke-color));
+}
+.PhotoInfo {
+    display: flex;
+    justify-content: space-between;
+    max-width: 500px;
+}
+.PhotoInfo img {
+    border-radius: 10px;
+    width: 215px;
+    height: 320px;
+}
+.WorkTime{
+    color: white;
+}
+.Btn {
+    padding: 0 18px;
+}
+
+.BtnUra {
+    padding: 0 44px;
+}
+
+@media (max-width: 767px) {
+    .Container{
+        font-size: 15px;
+        padding: 50px 0 0 20px;
+        font-weight: 700;
+        line-height: 25px;
+    }
+    .Society{
+        width: 296px;
+        display: flex;
+        justify-content: space-between;
+        margin: 10px 0px;
+    }
+    .WorkTime {
+     font-size: 20px;
+        padding-left: 10%;
+    }
+    .PhotoInfo {
+        max-width: 280px;
+    }
+    .PhotoInfo img {
+        padding-left: 5px;
+        border-radius: 10px;
+        width: 108px;
+        height: 160px;
+    }
+    .MaxBoxImg img{
+        padding-left: 28px;
+    }
+    .Btn {
+        padding: 0;
+    }
+    .Btn {
+        padding: 0 18px;
+    }
+    .BtnMedia{
+        display: block;
+        padding: 0 18px;
+    }
+    .BtnUra {
+        padding: 0;
+    }
+}
+
+@media (max-width: 325px) {
+    .Container span, a{
+        font-size: 10px;
+        font-weight: 700;
+        line-height: 25px;
+    }
+    .PhotoInfo img {
+        padding-left: 5px;
+        width: 74px;
+        height: 110px;
+    }
+    .PhotoInfo {
+        max-width: 220px;
+    }
+    .Society{
+        width: 220px;
+    }
+}

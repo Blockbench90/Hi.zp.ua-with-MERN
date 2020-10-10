@@ -1,0 +1,33 @@
+.Wrapper{
+    height: 100vh;
+    /*width: 100vw;*/
+    /*background: rgba(22, 99, 106, 0.9);*/
+    /*background: rgba(211, 217, 237, 0.9);*/
+    background: rgba(0, 128, 130, 0.9);
+
+    color: white;
+    padding: 50px;
+    overflow: hidden;
+}
+.Container{
+    display: flex;
+    justify-content: space-between;
+    max-width: 90vw;
+    margin: 0 auto;
+}
+.PostToLeftSideWrapper, .PostToRightSideWrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.PostToLeftSideWrapper img, .PostToRightSideWrapper img{
+    width: 835px;
+    height: 100px;
+    margin: 10px;
+}
+.Content p{
+    text-indent: 20px;
+    font-size: 16px;
+}
+.BackButton{
+    padding-left: 88%;
+}

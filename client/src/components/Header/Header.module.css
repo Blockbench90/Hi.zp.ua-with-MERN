@@ -1,0 +1,176 @@
+.Wrapper{
+    position: fixed;
+    z-index: 7;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 50px;
+    width: 100vw;
+    line-height: 15px;
+    font-size: 18px;
+    background: rgba(0, 0, 0, 0.5);
+    font-family: 'Roboto', sans-serif;
+}
+.Container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.HeaderInner{
+    display: flex;
+    justify-content: space-between;
+}
+.NavigationMenu{
+    display: flex;
+    padding: 15px 0 0 450px;
+}
+.NavigationMenu a{
+    padding: 15px;
+}
+.NavigationMenu a:hover {
+    transition: all .3s;
+    transform: scale(1.2);
+    font-size: 18px;
+    font-weight: 700;
+    color: aqua;
+    border-bottom: 1px solid aqua;
+}
+.Logo img{
+    width: 40px;
+    padding: 5px 0 0 30px;
+}
+.Logo img:hover {
+    cursor: pointer;
+    --stroke-pos: 1px;
+    --stroke-neg: -1px;
+    --stroke-color: aqua;
+    filter: drop-shadow(var(--stroke-pos) 0 0 var(--stroke-color))
+    drop-shadow(var(--stroke-neg) 0 var(--stroke-color))
+    drop-shadow(0 var(--stroke-pos) 0 var(--stroke-color))
+    drop-shadow(0 var(--stroke-neg) 0 var(--stroke-color))
+    drop-shadow(var(--stroke-pos) var(--stroke-pos) 0 var(--stroke-color))
+    drop-shadow(var(--stroke-pos) var(--stroke-neg) 0 var(--stroke-color))
+    drop-shadow(var(--stroke-neg) var(--stroke-pos) 0 var(--stroke-color))
+    drop-shadow(var(--stroke-neg) var(--stroke-neg) 0 var(--stroke-color));
+}
+.Button{
+    margin-top: 10px;
+    padding-right: 10px;
+}
+
+.wrapper {
+    display: inline-block;
+    border: 1px solid red;
+    padding: 6px 22px;
+    background: rgba(255, 255, 255, 0.15);
+
+    transition: all .5s;
+}
+.wrapper:hover{
+    background: rgb(255,0,42);
+}
+
+@media (max-width: 1199px) {
+    .Wrapper{
+        font-size: 22px;
+    }
+    .Container{
+        max-width: 414px;
+        padding-right: 290px;
+    }
+    .Logo img{
+        width: 30px;
+        padding-left: 10px;
+        padding-top: 8px;
+    }
+    .NavigationMenu {
+        padding: 9px 76px 0 10px;
+    }
+    .NavigationMenu a{
+        padding: 10px;
+    }
+    .Button{
+        display: none;
+    }
+    .NavigationMenu a:hover {
+        font-size: 22px;
+    }
+}
+@media (max-width: 768px) {
+    .Wrapper{
+        font-size: 25px;
+    }
+    .Container{
+        max-width: 414px;
+        padding-right: 200px;
+    }
+    .Logo img{
+        width: 30px;
+        padding-left: 10px;
+        padding-top: 8px;
+    }
+    .NavigationMenu {
+        padding: 9px 0 0 10px;
+    }
+    .NavigationMenu a{
+        margin-left: 50%;
+        padding: 0 0 0 20px;
+    }
+    .Button, .Nav, .Partners{
+        display: none;
+    }
+    .NavigationMenu a:hover {
+        font-size: 25px;
+    }
+}
+@media (max-width: 560px) {
+    .Wrapper{
+        font-size: 16px;
+    }
+    .Container{
+        max-width: 414px;
+    }
+    .Logo img{
+        width: 25px;
+        padding-left: 10px;
+        padding-top: 8px;
+    }
+    .NavigationMenu {
+        padding: 9px 76px 0 0;
+    }
+    .NavigationMenu a{
+        margin-left: 50%;
+        padding: 0 0 0 20px;
+    }
+    .Button{
+        display: none;
+    }
+    .NavigationMenu a:hover {
+        font-size: 15px;
+    }
+}
+@media (max-width: 380px) {
+    .Wrapper{
+        font-size: 14px;
+    }
+    .Container{
+        max-width: 414px;
+    }
+    .Logo img{
+        width: 25px;
+        padding-left: 10px;
+        padding-top: 8px;
+    }
+    .NavigationMenu {
+        padding: 9px 76px 0 0;
+    }
+    .NavigationMenu a{
+        margin-left: 50%;
+        padding: 0 0 0 20px;
+    }
+    .Button{
+        display: none;
+    }
+    .NavigationMenu a:hover {
+        font-size: 13px;
+    }
+}

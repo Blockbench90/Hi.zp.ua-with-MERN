@@ -1,0 +1,95 @@
+.Wrapper{
+    position: fixed;
+    z-index: 7;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 50px;
+    width: 100vw;
+    line-height: 40px;
+    font-size: 26px;
+    background: rgba(0, 0, 0, 0.8);
+    font-family: 'Roboto Slab', serif;
+}
+.Container{
+
+}
+.HeaderInner{
+    display: flex;
+    justify-content: space-between;
+    background: rgba(0,0,0, 0.2);
+}
+.NavigationWrapper{
+    width: 50vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+}
+.NavigationMenu img{
+    width: 180px;
+}
+.NavigationMenu a{
+    margin-left: 10px;
+}
+.NavigationMenu a:hover {
+    transition: all .3s;
+    transform: scale(1.2);
+    font-size: 26px;
+    font-weight: 700;
+    color: aqua;
+    border-bottom: 2px solid aqua;
+}
+.Logo img{
+    width: 40px;
+    padding: 5px 0 0 30px;
+}
+.Logo img:hover {
+    cursor: pointer;
+    --stroke-pos: 1px;
+    --stroke-neg: -1px;
+    --stroke-color: aqua;
+    filter: drop-shadow(var(--stroke-pos) 0 0 var(--stroke-color))
+    drop-shadow(var(--stroke-neg) 0 var(--stroke-color))
+    drop-shadow(0 var(--stroke-pos) 0 var(--stroke-color))
+    drop-shadow(0 var(--stroke-neg) 0 var(--stroke-color))
+    drop-shadow(var(--stroke-pos) var(--stroke-pos) 0 var(--stroke-color))
+    drop-shadow(var(--stroke-pos) var(--stroke-neg) 0 var(--stroke-color))
+    drop-shadow(var(--stroke-neg) var(--stroke-pos) 0 var(--stroke-color))
+    drop-shadow(var(--stroke-neg) var(--stroke-neg) 0 var(--stroke-color));
+}
+.CloseMenu img{
+    padding-left: 35vw;
+    width: 40px;
+    margin: 0 0 0 0;
+}
+.CloseMenu img:hover {
+    cursor: pointer;
+    --stroke-pos: 1px;
+    --stroke-neg: -1px;
+    --stroke-color: aqua;
+    filter: drop-shadow(var(--stroke-pos) 0 0 var(--stroke-color))
+    drop-shadow(var(--stroke-neg) 0 var(--stroke-color))
+    drop-shadow(0 var(--stroke-pos) 0 var(--stroke-color))
+    drop-shadow(0 var(--stroke-neg) 0 var(--stroke-color))
+    drop-shadow(var(--stroke-pos) var(--stroke-pos) 0 var(--stroke-color))
+    drop-shadow(var(--stroke-pos) var(--stroke-neg) 0 var(--stroke-color))
+    drop-shadow(var(--stroke-neg) var(--stroke-pos) 0 var(--stroke-color))
+    drop-shadow(var(--stroke-neg) var(--stroke-neg) 0 var(--stroke-color));
+}
+.Open img{
+    width: 48px;
+    padding-right: 15px;
+}
+.Open img:hover {
+    cursor: pointer;
+    --stroke-pos: 1px;
+    --stroke-neg: -1px;
+    --stroke-color: aqua;
+    filter: drop-shadow(var(--stroke-pos) 0 0 var(--stroke-color))
+    drop-shadow(var(--stroke-neg) 0 var(--stroke-color))
+    drop-shadow(0 var(--stroke-pos) 0 var(--stroke-color))
+    drop-shadow(0 var(--stroke-neg) 0 var(--stroke-color))
+    drop-shadow(var(--stroke-pos) var(--stroke-pos) 0 var(--stroke-color))
+    drop-shadow(var(--stroke-pos) var(--stroke-neg) 0 var(--stroke-color))
+    drop-shadow(var(--stroke-neg) var(--stroke-pos) 0 var(--stroke-color))
+    drop-shadow(var(--stroke-neg) var(--stroke-neg) 0 var(--stroke-color));
+}

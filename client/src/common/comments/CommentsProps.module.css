@@ -1,0 +1,58 @@
+.InputWrapper {
+    width: 335px;
+    border-bottom: 2px solid darkturquoise;
+}
+.InputWrapper.error {
+    border-bottom: 3px solid red;
+}
+.InputWrapper.error span{
+    color: rgba(222,109,158, 1);
+    font-size: 18px;
+}
+.InputWrapper input {
+    /*background-color: darkcyan;*/
+    width: 325px;
+    background: rgba(0, 0, 0, 0.6); /*черный полупрозрачный*/
+    color: white;
+    padding-left: 10px;
+    /*Сброс стандартных стилей*/
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+.InputWrapper input::placeholder {
+    color: darkgray;
+}
+
+.TextareaWrapper.error span{
+    color: rgba(222,109,158, 1);
+    font-size: 15px;
+}
+
+.TextareaWrapper textarea {
+    /*!* = Убираем скролл *!*/
+    overflow: auto;
+    /*!* = Убираем увеличение *!*/
+    resize: none;
+    /*background-color: darkcyan;*/
+    text-decoration: none;
+    border: none;
+    outline: none;
+    padding: 10px;
+    /*background-color: rgba(38, 55, 54, 0.3);*/
+    background: rgba(0, 0, 0, 0.6); /*черный полупрозрачный*/
+    color: white;
+    height: 40vh;
+    width: 325px;
+}
+
+.TextareaWrapper textarea::placeholder {
+    color: rgba(250, 255, 250, 0.6);
+    /*color: white;*/
+}
+@media (max-width: 675px) {
+    .TextareaWrapper textarea {
+        height: 13vh;
+        width: 305px;
+    }
+}

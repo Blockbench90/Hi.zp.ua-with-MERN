@@ -1,0 +1,21 @@
+.ParallaxWrapper {
+    z-index: -1;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    /*height: 100vh;*/
+}
+.Parallax{
+    /*background: url("../../assets/img/back2.jpg") no-repeat;*/
+    background: url("../../assets/img/back1.png") no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: -10%;
+    bottom: -10%;
+    top: 0;
+    bottom: 0;
+    width: 120%;
+    height: 120%;
+}

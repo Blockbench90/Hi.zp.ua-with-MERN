@@ -1,0 +1,85 @@
+.Wrapper{
+    height: 100vh;
+    color: white;
+    padding: 50px;
+    overflow: hidden;
+}
+.Container{
+    display: flex;
+    justify-content: space-between;
+    max-width: 90vw;
+    margin: 0 auto;
+}
+.Content p{
+    text-indent: 20px;
+    font-size: 20px;
+}
+.BackButton{
+    padding-left: 88%;
+}
+.Gallery{
+    max-width: 260px;
+}
+.Gallery img{
+    padding: 20px;
+    width: 200px;
+    cursor: pointer;
+}
+
+@media (max-width: 1150px) {
+    .List {
+        font-size: 14px;
+    }
+    .Title h3{
+        font-size: 20px;
+    }
+    .Content p{
+        font-size: 14px;
+    }
+    .BackButton{
+        padding-left: 75%;
+    }
+}
+
+@media (max-width: 767px) {
+    .Wrapper{
+     padding: 50px 10px 0 10px;
+    }
+    .List {
+        font-size: 12px;
+        line-height: 12px;
+    }
+    .Title h3{
+        font-size: 12px;
+        line-height: 15px;
+    }
+    .Content p{
+        font-size: 14px;
+        line-height: 14px;
+    }
+    .BackButton{
+        padding-left: 75%;
+    }
+    .Gallery img{
+        padding: 20px;
+        width: 63px;
+        cursor: pointer;
+    }
+    .BackButton{
+        padding-left: 50%;
+    }
+}
+@media (max-height: 668px) {
+    .List {
+        font-size: 7px;
+        line-height: 10px;
+    }
+    .Title h3{
+        font-size: 9px;
+        line-height: 14px;
+    }
+    .Content p{
+        font-size: 10px;
+        line-height: 10px;
+    }
+}
